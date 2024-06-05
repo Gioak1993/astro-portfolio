@@ -1,5 +1,8 @@
 ---
 import ProjectCard from "./ProjectCard.astro"
+import { Image } from "astro:assets"
+import Codexme from "../images/Codexme.webp"
+import Localxdeal from "../images/Localxdeal.webp"
 ---
 
 <section id="projects" class="">
@@ -9,8 +12,8 @@ import ProjectCard from "./ProjectCard.astro"
             <p class="text-gray-500 sm:text-xl dark:text-gray-400">There are tech that suit some projects better than others, thats why im always curious looking for whats new, here is my current stack</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 ">
-    <ProjectCard  href = "https://localxdeal.com" src="localxdeal.webp" alt="Website main page" title = "LocalXDeal" description = "Web ecommerce app made in Django, This website is a project aimed at highlighting the products and services of a small local business The website serves as a digital storefront, providing an online platform for the business to display its current stock and offerings. Designed with simplicity and elegance in mind, the website showcases the unique identity and offerings of the local business, allowing visitors to explore its products or services from the comfort of their own homes."/>
-    <ProjectCard  href = "https://codexme.reflex.run" src="codexme.webp" alt="Website main page" title = "CodeXme" description = "CodeXme its a web platform that allows to run code for learning and challenges, allowing learning resources for people around the world."/>
+    <ProjectCard  href = "https://localxdeal.com" src={Localxdeal} alt="Website main page" title = "LocalXDeal" description = "Web ecommerce app made in Django, This website is a project aimed at highlighting the products and services of a small local business The website serves as a digital storefront, providing an online platform for the business to display its current stock and offerings. Designed with simplicity and elegance in mind, the website showcases the unique identity and offerings of the local business, allowing visitors to explore its products or services from the comfort of their own homes."/>
+    <ProjectCard  href = "https://codexme.reflex.run" src={Codexme} alt="Website main page" title = "CodeXme" description = "CodeXme its a web platform that allows to run code for learning and challenges, allowing learning resources for people around the world."/>
     </div>
     </div>
 </section>
