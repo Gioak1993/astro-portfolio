@@ -3,8 +3,8 @@ const background = "#FAFAF9";
 const darkBackground = "#0C0A09";
 const imgBorder = "#7576"
 const arrows = "#f0efec"
-import GioLight from '../images/Gio-stone-50.webp';
-import GioDark from '../images/Gio-stone-950.webp';
+
+import Gio from '../images/gio.webp';
 import { Image } from 'astro:assets';
 ---
 
@@ -20,8 +20,8 @@ import { Image } from 'astro:assets';
             </a>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex ">
-            <Image class="dark:hidden rounded-full" src={GioLight} alt='Giovanny Kelly Face' loading='lazy'/>
-            <Image class="hidden dark:inline rounded-full" src={GioDark} alt='Giovanny Kelly Face' loading='lazy'/>
+            <Image class="rounded-full" src={Gio} alt='Giovanny Kelly Face' loading='lazy'/>
+            
         </div>                
     </div>
 </section>
