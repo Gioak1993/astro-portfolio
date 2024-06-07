@@ -14,7 +14,7 @@ const { title, description} = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>Giovanny Kelly</title>
-    <script>
+    <script is:inline>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
         localStorage.getItem("color-theme") === "dark" ||
@@ -26,16 +26,13 @@ const { title, description} = Astro.props;
         document.documentElement.classList.remove("dark");
       }
     </script>
-    <script
-      is:inline
-      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
-    ></script>
   </head>
   <body class="bg-stone-50 border-gray-200 dark:bg-stone-950 px-6 ">
     <Header />
     <slot />
     <Footer/>
   </body>
+
 </html>
 
 
